@@ -13,7 +13,7 @@ namespace Domain.Entities
     {
         #region Get & Set
         public int Id { get; set; }
-        public String Nombre { get; set; }
+        public string Nombre { get; set; }
         public double Valor { get; set; }
         public int VidaUtil { get; set; }
         public double ValorResidual { get; set; }

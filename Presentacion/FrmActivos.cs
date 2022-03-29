@@ -121,18 +121,18 @@ namespace practicaDepreciacion
                 MessageBox.Show("Debe seleccionar un activo", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
-            FrmEdicion frmEdiciones = new FrmEdicion();
-            frmEdiciones.activoServices = activoServices;
-            frmEdiciones.TxtId.Text = DgvActivos.CurrentRow.Cells[0].Value.ToString();
-            frmEdiciones.TxtNombre.Text = DgvActivos.CurrentRow.Cells[1].Value.ToString();
-            frmEdiciones.NudValor.Value = decimal.Parse(DgvActivos.CurrentRow.Cells[2].Value.ToString());
-            frmEdiciones.NudVidaU.Value = decimal.Parse(DgvActivos.CurrentRow.Cells[3].Value.ToString());
-            frmEdiciones.NudValorR.Value = decimal.Parse(DgvActivos.CurrentRow.Cells[4].Value.ToString());
+            FrmEdicion mod = new FrmEdicion();
+            mod.activoServices = activoServices;
+            mod.lblID.Text = DgvActivos.CurrentRow.Cells[0].Value.ToString();
+            mod.txtNombre.Text = DgvActivos.CurrentRow.Cells[1].Value.ToString();
+            mod.txtValorMOD.Text = DgvActivos.CurrentRow.Cells[2].Value.ToString();
+            mod.txtVIdaUtilMOD.Text = DgvActivos.CurrentRow.Cells[3].Value.ToString();
+            mod.txtValorResidualMOD.Text = DgvActivos.CurrentRow.Cells[4].Value.ToString();
 
-            frmEdiciones.ShowDialog();
+            mod.ShowDialog();
 
-            DgvActivos.DataSource = null;
-            DgvActivos.DataSource = activoServices.Read();
+            ActualizarLista();
+           
         }
         #endregion
 
@@ -208,5 +208,14 @@ namespace practicaDepreciacion
         }
         #endregion
         #endregion
+
+
+        public void ActualizarLista()
+        {
+            DgvActivos.DataSource = null;
+            DgvActivos.DataSource = activoServices.Read();
+        }
+
+
     }
 }

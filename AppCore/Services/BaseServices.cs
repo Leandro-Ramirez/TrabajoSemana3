@@ -12,12 +12,18 @@ namespace AppCore.Services
 {
     public abstract class BaseServices<T> : IServices<T>
     {
-        private IModel<T> Model;
 
+        #region Globales
+        private IModel<T> Model;
+        #endregion
+
+        #region Protected
         protected BaseServices(IModel<T> model)
         {
             this.Model = model;
         }
+        #endregion
+
 
         #region Añadir
         public void Add(T t)

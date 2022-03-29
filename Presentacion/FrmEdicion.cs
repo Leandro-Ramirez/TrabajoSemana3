@@ -33,11 +33,17 @@ namespace practicaDepreciacion
         {
             Activo activo = new Activo()
             {
-                Id = int.Parse(TxtId.Text),
-                Nombre = TxtNombre.Text,
-                Valor = (float)NudValor.Value,
-                VidaUtil = (int)NudVidaU.Value,
-                ValorResidual = (float)NudValorR.Value
+                Id = int.Parse(lblID.Text),
+
+                Nombre = txtNombre.Text,
+
+                Valor = float.Parse(txtValorMOD.Text),
+
+                VidaUtil = Convert.ToInt32(txtVIdaUtilMOD.Text),
+
+                ValorResidual = Convert.ToInt32(txtValorResidualMOD.Text)
+
+
             };
             activoServices.Update(activo, activo.Id);
             Dispose();
