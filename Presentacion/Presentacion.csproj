@@ -89,6 +89,12 @@
     <Compile Include="FrmMetodos.Designer.cs">
       <DependentUpon>FrmMetodos.cs</DependentUpon>
     </Compile>
+    <Compile Include="JoyOfCreationcs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="JoyOfCreationcs.Designer.cs">
+      <DependentUpon>JoyOfCreationcs.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="FrmActivos.resx">
@@ -99,6 +105,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FrmMetodos.resx">
       <DependentUpon>FrmMetodos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="JoyOfCreationcs.resx">
+      <DependentUpon>JoyOfCreationcs.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

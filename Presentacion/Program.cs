@@ -9,6 +9,7 @@ using System.Windows.Forms;
 using System.Threading.Tasks;
 using Infraestructure.Repository;
 using System.Collections.Generic;
+using Presentacion;
 #endregion
 
 namespace practicaDepreciacion
