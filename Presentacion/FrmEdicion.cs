@@ -28,6 +28,10 @@ namespace practicaDepreciacion
         #endregion
 
         #region Botones
+
+
+
+
         #region Aceptar
         private void BtnActualizarD_Click(object sender, EventArgs e)
         {
@@ -50,12 +54,20 @@ namespace practicaDepreciacion
         }
         #endregion
 
+
+
+
+
         #region Cancelar
         private void BtnRegresar_Click(object sender, EventArgs e)
         {
             this.Close();
         }
         #endregion
+
+
+
+
         #endregion
     }
 }

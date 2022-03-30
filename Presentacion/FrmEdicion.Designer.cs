@@ -37,12 +37,12 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.GbEdicion = new System.Windows.Forms.GroupBox();
+            this.txtVIdaUtilMOD = new System.Windows.Forms.TextBox();
+            this.txtValorResidualMOD = new System.Windows.Forms.TextBox();
+            this.txtValorMOD = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.GbBotones = new System.Windows.Forms.GroupBox();
             this.label5 = new System.Windows.Forms.Label();
-            this.txtValorMOD = new System.Windows.Forms.TextBox();
-            this.txtValorResidualMOD = new System.Windows.Forms.TextBox();
-            this.txtVIdaUtilMOD = new System.Windows.Forms.TextBox();
             this.GbEdicion.SuspendLayout();
             this.GbBotones.SuspendLayout();
             this.SuspendLayout();
@@ -51,7 +51,7 @@
             // 
             this.lblID.AutoSize = true;
             this.lblID.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblID.Location = new System.Drawing.Point(114, 21);
+            this.lblID.Location = new System.Drawing.Point(154, 19);
             this.lblID.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblID.Name = "lblID";
             this.lblID.Size = new System.Drawing.Size(35, 16);
@@ -164,6 +164,33 @@
             this.GbEdicion.TabStop = false;
             this.GbEdicion.Text = "Datos a Editar:";
             // 
+            // txtVIdaUtilMOD
+            // 
+            this.txtVIdaUtilMOD.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtVIdaUtilMOD.Location = new System.Drawing.Point(157, 166);
+            this.txtVIdaUtilMOD.Margin = new System.Windows.Forms.Padding(4);
+            this.txtVIdaUtilMOD.Name = "txtVIdaUtilMOD";
+            this.txtVIdaUtilMOD.Size = new System.Drawing.Size(150, 22);
+            this.txtVIdaUtilMOD.TabIndex = 9;
+            // 
+            // txtValorResidualMOD
+            // 
+            this.txtValorResidualMOD.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtValorResidualMOD.Location = new System.Drawing.Point(157, 125);
+            this.txtValorResidualMOD.Margin = new System.Windows.Forms.Padding(4);
+            this.txtValorResidualMOD.Name = "txtValorResidualMOD";
+            this.txtValorResidualMOD.Size = new System.Drawing.Size(150, 22);
+            this.txtValorResidualMOD.TabIndex = 8;
+            // 
+            // txtValorMOD
+            // 
+            this.txtValorMOD.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtValorMOD.Location = new System.Drawing.Point(157, 92);
+            this.txtValorMOD.Margin = new System.Windows.Forms.Padding(4);
+            this.txtValorMOD.Name = "txtValorMOD";
+            this.txtValorMOD.Size = new System.Drawing.Size(150, 22);
+            this.txtValorMOD.TabIndex = 7;
+            // 
             // label6
             // 
             this.label6.AutoSize = true;
@@ -194,33 +221,6 @@
             this.label5.Size = new System.Drawing.Size(222, 31);
             this.label5.TabIndex = 0;
             this.label5.Text = "Modificar Activo";
-            // 
-            // txtValorMOD
-            // 
-            this.txtValorMOD.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtValorMOD.Location = new System.Drawing.Point(157, 92);
-            this.txtValorMOD.Margin = new System.Windows.Forms.Padding(4);
-            this.txtValorMOD.Name = "txtValorMOD";
-            this.txtValorMOD.Size = new System.Drawing.Size(150, 22);
-            this.txtValorMOD.TabIndex = 7;
-            // 
-            // txtValorResidualMOD
-            // 
-            this.txtValorResidualMOD.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtValorResidualMOD.Location = new System.Drawing.Point(157, 125);
-            this.txtValorResidualMOD.Margin = new System.Windows.Forms.Padding(4);
-            this.txtValorResidualMOD.Name = "txtValorResidualMOD";
-            this.txtValorResidualMOD.Size = new System.Drawing.Size(150, 22);
-            this.txtValorResidualMOD.TabIndex = 8;
-            // 
-            // txtVIdaUtilMOD
-            // 
-            this.txtVIdaUtilMOD.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtVIdaUtilMOD.Location = new System.Drawing.Point(157, 166);
-            this.txtVIdaUtilMOD.Margin = new System.Windows.Forms.Padding(4);
-            this.txtVIdaUtilMOD.Name = "txtVIdaUtilMOD";
-            this.txtVIdaUtilMOD.Size = new System.Drawing.Size(150, 22);
-            this.txtVIdaUtilMOD.TabIndex = 9;
             // 
             // FrmEdicion
             // 
