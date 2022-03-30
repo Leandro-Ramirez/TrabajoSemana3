@@ -100,6 +100,16 @@ namespace practicaDepreciacion
                     VidaUtil = int.Parse(TxtVidaU.Text)
                 };
 
+                Empleado empleado = new Empleado()
+                {
+                    Nombre = txtNombreEmpleado.Text,
+                    Codigo = int.Parse(txtCodigoEmpleado.Text),
+                  
+                    Telefono = txtTelefono.Text,
+
+
+                };
+
 
 
 
@@ -186,6 +196,14 @@ namespace practicaDepreciacion
             {
                 return false;
             }
+
+            if (String.IsNullOrEmpty(txtNombreEmpleado.Text) || String.IsNullOrEmpty(txtCodigoEmpleado.Text) || String.IsNullOrEmpty(txtDescripcion.Text) || String.IsNullOrEmpty(cbEstadoCivil.Text) || String.IsNullOrEmpty(txtTelefono.Text))
+            {
+                return false;
+            }
+            
+
+
             return true;
         }
         #endregion

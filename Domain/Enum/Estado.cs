@@ -11,7 +11,6 @@ namespace Domain.Enum
         Soltero,
         Casado,
 
-        
-
+      
     }
 }

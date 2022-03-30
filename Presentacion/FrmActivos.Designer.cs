@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmActivos));
             this.label1 = new System.Windows.Forms.Label();
             this.BtnEliminar = new System.Windows.Forms.Button();
@@ -49,14 +49,16 @@
             this.BtnLimpiar = new System.Windows.Forms.Button();
             this.BtnMostrar = new System.Windows.Forms.Button();
             this.BtnSalir = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.txtNombreEmpleado = new System.Windows.Forms.TextBox();
+            this.txtCodigoEmpleado = new System.Windows.Forms.TextBox();
+            this.txtDescripcion = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
+            this.cbEstadoCivil = new System.Windows.Forms.ComboBox();
+            this.txtTelefono = new System.Windows.Forms.TextBox();
+            this.label9 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.DgvActivos)).BeginInit();
             this.GbInformacion.SuspendLayout();
             this.GbAcciones.SuspendLayout();
@@ -111,16 +113,16 @@
             // 
             this.DgvActivos.BackgroundColor = System.Drawing.SystemColors.ControlDarkDark;
             this.DgvActivos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.Desktop;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.DgvActivos.DefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.Desktop;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.DgvActivos.DefaultCellStyle = dataGridViewCellStyle1;
             this.DgvActivos.GridColor = System.Drawing.Color.Maroon;
-            this.DgvActivos.Location = new System.Drawing.Point(13, 278);
+            this.DgvActivos.Location = new System.Drawing.Point(12, 397);
             this.DgvActivos.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.DgvActivos.Name = "DgvActivos";
             this.DgvActivos.RowHeadersWidth = 62;
@@ -227,10 +229,12 @@
             // GbInformacion
             // 
             this.GbInformacion.BackColor = System.Drawing.Color.SandyBrown;
-            this.GbInformacion.Controls.Add(this.textBox1);
-            this.GbInformacion.Controls.Add(this.textBox2);
-            this.GbInformacion.Controls.Add(this.textBox3);
-            this.GbInformacion.Controls.Add(this.textBox4);
+            this.GbInformacion.Controls.Add(this.txtTelefono);
+            this.GbInformacion.Controls.Add(this.label9);
+            this.GbInformacion.Controls.Add(this.cbEstadoCivil);
+            this.GbInformacion.Controls.Add(this.txtNombreEmpleado);
+            this.GbInformacion.Controls.Add(this.txtCodigoEmpleado);
+            this.GbInformacion.Controls.Add(this.txtDescripcion);
             this.GbInformacion.Controls.Add(this.label5);
             this.GbInformacion.Controls.Add(this.label6);
             this.GbInformacion.Controls.Add(this.label7);
@@ -247,7 +251,7 @@
             this.GbInformacion.ForeColor = System.Drawing.Color.Black;
             this.GbInformacion.Location = new System.Drawing.Point(12, 46);
             this.GbInformacion.Name = "GbInformacion";
-            this.GbInformacion.Size = new System.Drawing.Size(656, 226);
+            this.GbInformacion.Size = new System.Drawing.Size(689, 322);
             this.GbInformacion.TabIndex = 0;
             this.GbInformacion.TabStop = false;
             this.GbInformacion.Text = "Informacion:";
@@ -263,9 +267,9 @@
             this.GbAcciones.Controls.Add(this.BtnEliminar);
             this.GbAcciones.Font = new System.Drawing.Font("Microsoft YaHei UI", 14.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.GbAcciones.ForeColor = System.Drawing.Color.Black;
-            this.GbAcciones.Location = new System.Drawing.Point(691, 46);
+            this.GbAcciones.Location = new System.Drawing.Point(720, 46);
             this.GbAcciones.Name = "GbAcciones";
-            this.GbAcciones.Size = new System.Drawing.Size(472, 226);
+            this.GbAcciones.Size = new System.Drawing.Size(558, 322);
             this.GbAcciones.TabIndex = 1;
             this.GbAcciones.TabStop = false;
             this.GbAcciones.Text = "Acciones:";
@@ -274,7 +278,7 @@
             // 
             this.pictureBox1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.BackgroundImage")));
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox1.Location = new System.Drawing.Point(264, 20);
+            this.pictureBox1.Location = new System.Drawing.Point(374, 13);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(162, 176);
             this.pictureBox1.TabIndex = 6;
@@ -328,37 +332,30 @@
             this.BtnSalir.UseVisualStyleBackColor = false;
             this.BtnSalir.Click += new System.EventHandler(this.BtnSalir_Click);
             // 
-            // textBox1
+            // txtNombreEmpleado
             // 
-            this.textBox1.Location = new System.Drawing.Point(503, 20);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(150, 32);
-            this.textBox1.TabIndex = 5;
+            this.txtNombreEmpleado.Location = new System.Drawing.Point(503, 20);
+            this.txtNombreEmpleado.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.txtNombreEmpleado.Name = "txtNombreEmpleado";
+            this.txtNombreEmpleado.Size = new System.Drawing.Size(153, 32);
+            this.txtNombreEmpleado.TabIndex = 5;
             // 
-            // textBox2
+            // txtCodigoEmpleado
             // 
-            this.textBox2.Location = new System.Drawing.Point(503, 64);
-            this.textBox2.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(153, 32);
-            this.textBox2.TabIndex = 6;
+            this.txtCodigoEmpleado.Location = new System.Drawing.Point(503, 64);
+            this.txtCodigoEmpleado.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.txtCodigoEmpleado.Name = "txtCodigoEmpleado";
+            this.txtCodigoEmpleado.Size = new System.Drawing.Size(153, 32);
+            this.txtCodigoEmpleado.TabIndex = 6;
             // 
-            // textBox3
+            // txtDescripcion
             // 
-            this.textBox3.Location = new System.Drawing.Point(503, 117);
-            this.textBox3.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(153, 32);
-            this.textBox3.TabIndex = 8;
-            // 
-            // textBox4
-            // 
-            this.textBox4.Location = new System.Drawing.Point(503, 161);
-            this.textBox4.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(153, 32);
-            this.textBox4.TabIndex = 10;
+            this.txtDescripcion.Location = new System.Drawing.Point(503, 168);
+            this.txtDescripcion.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.txtDescripcion.Multiline = true;
+            this.txtDescripcion.Name = "txtDescripcion";
+            this.txtDescripcion.Size = new System.Drawing.Size(153, 148);
+            this.txtDescripcion.TabIndex = 10;
             // 
             // label5
             // 
@@ -375,12 +372,12 @@
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft YaHei UI", 14.25F, System.Drawing.FontStyle.Italic);
-            this.label6.Location = new System.Drawing.Point(402, 164);
+            this.label6.Location = new System.Drawing.Point(314, 168);
             this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(93, 25);
+            this.label6.Size = new System.Drawing.Size(187, 25);
             this.label6.TabIndex = 12;
-            this.label6.Text = "Vida util:";
+            this.label6.Text = "Descripcion Activo:";
             // 
             // label7
             // 
@@ -397,19 +394,49 @@
             // 
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Microsoft YaHei UI", 14.25F, System.Drawing.FontStyle.Italic);
-            this.label8.Location = new System.Drawing.Point(353, 124);
+            this.label8.Location = new System.Drawing.Point(422, 120);
             this.label8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(143, 25);
+            this.label8.Size = new System.Drawing.Size(78, 25);
             this.label8.TabIndex = 11;
-            this.label8.Text = "Valor residual:";
+            this.label8.Text = "Estado:";
+            // 
+            // cbEstadoCivil
+            // 
+            this.cbEstadoCivil.FormattingEnabled = true;
+            this.cbEstadoCivil.Items.AddRange(new object[] {
+            "Soltero",
+            "Casado"});
+            this.cbEstadoCivil.Location = new System.Drawing.Point(508, 120);
+            this.cbEstadoCivil.Name = "cbEstadoCivil";
+            this.cbEstadoCivil.Size = new System.Drawing.Size(148, 33);
+            this.cbEstadoCivil.TabIndex = 13;
+            // 
+            // txtTelefono
+            // 
+            this.txtTelefono.Location = new System.Drawing.Point(150, 240);
+            this.txtTelefono.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.txtTelefono.Name = "txtTelefono";
+            this.txtTelefono.Size = new System.Drawing.Size(153, 32);
+            this.txtTelefono.TabIndex = 14;
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Microsoft YaHei UI", 14.25F, System.Drawing.FontStyle.Italic);
+            this.label9.Location = new System.Drawing.Point(36, 247);
+            this.label9.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(93, 25);
+            this.label9.TabIndex = 15;
+            this.label9.Text = "Telefono";
             // 
             // FrmActivos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.NavajoWhite;
-            this.ClientSize = new System.Drawing.Size(1282, 525);
+            this.ClientSize = new System.Drawing.Size(1290, 662);
             this.Controls.Add(this.BtnSalir);
             this.Controls.Add(this.GbAcciones);
             this.Controls.Add(this.GbInformacion);
@@ -454,14 +481,16 @@
         private System.Windows.Forms.Button BtnSalir;
         private System.Windows.Forms.Button BtnLimpiar;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox txtNombreEmpleado;
+        private System.Windows.Forms.TextBox txtCodigoEmpleado;
+        private System.Windows.Forms.TextBox txtDescripcion;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.ComboBox cbEstadoCivil;
+        private System.Windows.Forms.TextBox txtTelefono;
+        private System.Windows.Forms.Label label9;
     }
 }
 
