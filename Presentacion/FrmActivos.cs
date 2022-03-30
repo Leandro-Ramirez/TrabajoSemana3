@@ -99,6 +99,11 @@ namespace practicaDepreciacion
                     ValorResidual = double.Parse(TxtValorR.Text),
                     VidaUtil = int.Parse(TxtVidaU.Text)
                 };
+
+
+
+
+
                 activoServices.Add(activo);
                 Limpiar();
             }

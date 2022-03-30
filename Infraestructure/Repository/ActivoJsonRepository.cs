@@ -20,8 +20,17 @@ namespace Infraestructure.Repository
         }
         public void Add(Activo t)
         {
-            t.Id = context.GetLastId() + 1;
-            context.Create<ActivoSubModel>(ActivoSubModel.Convert(t));
+            try
+            {
+                t.Id = context.GetLastId() + 1;
+                context.Create<ActivoSubModel>(ActivoSubModel.Convert(t));
+            }
+            catch (Exception)
+            {
+                throw;
+
+            }
+            
         }
 
         public void Delete(Activo t)
@@ -29,7 +38,7 @@ namespace Infraestructure.Repository
             throw new NotImplementedException();
         }
 
-        public Activo GetById(int id)
+        public Activo GetById(Activo t)
         {
             throw new NotImplementedException();
         }
@@ -37,7 +46,8 @@ namespace Infraestructure.Repository
         public List<Activo> Read()
         {
             List<ActivoSubModel> activoSubModels = context.GetAll<ActivoSubModel>();
-            return activoSubModels.Select(x => ActivoSubModel.Convert(x)).ToList();
+            return activoSubModels.Count == 0 ? new List<Activo>() :
+                activoSubModels.Select(x => ActivoSubModel.Convert(x)).ToList();
         }
     }
 }
