@@ -44,11 +44,9 @@
             this.TxtNombre = new System.Windows.Forms.TextBox();
             this.BtnGuardar = new System.Windows.Forms.Button();
             this.GbInformacion = new System.Windows.Forms.GroupBox();
-            this.GbAcciones = new System.Windows.Forms.GroupBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.BtnLimpiar = new System.Windows.Forms.Button();
-            this.BtnMostrar = new System.Windows.Forms.Button();
-            this.BtnSalir = new System.Windows.Forms.Button();
+            this.txtTelefono = new System.Windows.Forms.TextBox();
+            this.label9 = new System.Windows.Forms.Label();
+            this.cbEstadoCivil = new System.Windows.Forms.ComboBox();
             this.txtNombreEmpleado = new System.Windows.Forms.TextBox();
             this.txtCodigoEmpleado = new System.Windows.Forms.TextBox();
             this.txtDescripcion = new System.Windows.Forms.TextBox();
@@ -56,9 +54,11 @@
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
-            this.cbEstadoCivil = new System.Windows.Forms.ComboBox();
-            this.txtTelefono = new System.Windows.Forms.TextBox();
-            this.label9 = new System.Windows.Forms.Label();
+            this.GbAcciones = new System.Windows.Forms.GroupBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.BtnLimpiar = new System.Windows.Forms.Button();
+            this.BtnMostrar = new System.Windows.Forms.Button();
+            this.BtnSalir = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.DgvActivos)).BeginInit();
             this.GbInformacion.SuspendLayout();
             this.GbAcciones.SuspendLayout();
@@ -256,6 +256,106 @@
             this.GbInformacion.TabStop = false;
             this.GbInformacion.Text = "Informacion:";
             // 
+            // txtTelefono
+            // 
+            this.txtTelefono.Location = new System.Drawing.Point(150, 240);
+            this.txtTelefono.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.txtTelefono.Name = "txtTelefono";
+            this.txtTelefono.Size = new System.Drawing.Size(153, 32);
+            this.txtTelefono.TabIndex = 14;
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Microsoft YaHei UI", 14.25F, System.Drawing.FontStyle.Italic);
+            this.label9.Location = new System.Drawing.Point(36, 247);
+            this.label9.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(93, 25);
+            this.label9.TabIndex = 15;
+            this.label9.Text = "Telefono";
+            // 
+            // cbEstadoCivil
+            // 
+            this.cbEstadoCivil.FormattingEnabled = true;
+            this.cbEstadoCivil.Items.AddRange(new object[] {
+            "Subsidio",
+            "Activo",
+            "Vacaciones"});
+            this.cbEstadoCivil.Location = new System.Drawing.Point(508, 120);
+            this.cbEstadoCivil.Name = "cbEstadoCivil";
+            this.cbEstadoCivil.Size = new System.Drawing.Size(148, 33);
+            this.cbEstadoCivil.TabIndex = 13;
+            // 
+            // txtNombreEmpleado
+            // 
+            this.txtNombreEmpleado.Location = new System.Drawing.Point(503, 20);
+            this.txtNombreEmpleado.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.txtNombreEmpleado.Name = "txtNombreEmpleado";
+            this.txtNombreEmpleado.Size = new System.Drawing.Size(153, 32);
+            this.txtNombreEmpleado.TabIndex = 5;
+            // 
+            // txtCodigoEmpleado
+            // 
+            this.txtCodigoEmpleado.Location = new System.Drawing.Point(503, 64);
+            this.txtCodigoEmpleado.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.txtCodigoEmpleado.Name = "txtCodigoEmpleado";
+            this.txtCodigoEmpleado.Size = new System.Drawing.Size(153, 32);
+            this.txtCodigoEmpleado.TabIndex = 6;
+            // 
+            // txtDescripcion
+            // 
+            this.txtDescripcion.Location = new System.Drawing.Point(503, 168);
+            this.txtDescripcion.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.txtDescripcion.Multiline = true;
+            this.txtDescripcion.Name = "txtDescripcion";
+            this.txtDescripcion.Size = new System.Drawing.Size(153, 148);
+            this.txtDescripcion.TabIndex = 10;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Microsoft YaHei UI", 14.25F, System.Drawing.FontStyle.Italic);
+            this.label5.Location = new System.Drawing.Point(318, 23);
+            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(183, 25);
+            this.label5.TabIndex = 7;
+            this.label5.Text = "NombreEmpleado:";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Microsoft YaHei UI", 14.25F, System.Drawing.FontStyle.Italic);
+            this.label6.Location = new System.Drawing.Point(314, 168);
+            this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(187, 25);
+            this.label6.TabIndex = 12;
+            this.label6.Text = "Descripcion Activo:";
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Microsoft YaHei UI", 14.25F, System.Drawing.FontStyle.Italic);
+            this.label7.Location = new System.Drawing.Point(321, 74);
+            this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(180, 25);
+            this.label7.TabIndex = 9;
+            this.label7.Text = "Codigo Empleado:";
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Microsoft YaHei UI", 14.25F, System.Drawing.FontStyle.Italic);
+            this.label8.Location = new System.Drawing.Point(422, 120);
+            this.label8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(78, 25);
+            this.label8.TabIndex = 11;
+            this.label8.Text = "Estado:";
+            // 
             // GbAcciones
             // 
             this.GbAcciones.BackColor = System.Drawing.Color.SandyBrown;
@@ -331,105 +431,6 @@
             this.BtnSalir.Text = "Salir";
             this.BtnSalir.UseVisualStyleBackColor = false;
             this.BtnSalir.Click += new System.EventHandler(this.BtnSalir_Click);
-            // 
-            // txtNombreEmpleado
-            // 
-            this.txtNombreEmpleado.Location = new System.Drawing.Point(503, 20);
-            this.txtNombreEmpleado.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.txtNombreEmpleado.Name = "txtNombreEmpleado";
-            this.txtNombreEmpleado.Size = new System.Drawing.Size(153, 32);
-            this.txtNombreEmpleado.TabIndex = 5;
-            // 
-            // txtCodigoEmpleado
-            // 
-            this.txtCodigoEmpleado.Location = new System.Drawing.Point(503, 64);
-            this.txtCodigoEmpleado.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.txtCodigoEmpleado.Name = "txtCodigoEmpleado";
-            this.txtCodigoEmpleado.Size = new System.Drawing.Size(153, 32);
-            this.txtCodigoEmpleado.TabIndex = 6;
-            // 
-            // txtDescripcion
-            // 
-            this.txtDescripcion.Location = new System.Drawing.Point(503, 168);
-            this.txtDescripcion.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.txtDescripcion.Multiline = true;
-            this.txtDescripcion.Name = "txtDescripcion";
-            this.txtDescripcion.Size = new System.Drawing.Size(153, 148);
-            this.txtDescripcion.TabIndex = 10;
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Microsoft YaHei UI", 14.25F, System.Drawing.FontStyle.Italic);
-            this.label5.Location = new System.Drawing.Point(318, 23);
-            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(183, 25);
-            this.label5.TabIndex = 7;
-            this.label5.Text = "NombreEmpleado:";
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Microsoft YaHei UI", 14.25F, System.Drawing.FontStyle.Italic);
-            this.label6.Location = new System.Drawing.Point(314, 168);
-            this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(187, 25);
-            this.label6.TabIndex = 12;
-            this.label6.Text = "Descripcion Activo:";
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Microsoft YaHei UI", 14.25F, System.Drawing.FontStyle.Italic);
-            this.label7.Location = new System.Drawing.Point(321, 74);
-            this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(180, 25);
-            this.label7.TabIndex = 9;
-            this.label7.Text = "Codigo Empleado:";
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Microsoft YaHei UI", 14.25F, System.Drawing.FontStyle.Italic);
-            this.label8.Location = new System.Drawing.Point(422, 120);
-            this.label8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(78, 25);
-            this.label8.TabIndex = 11;
-            this.label8.Text = "Estado:";
-            // 
-            // cbEstadoCivil
-            // 
-            this.cbEstadoCivil.FormattingEnabled = true;
-            this.cbEstadoCivil.Items.AddRange(new object[] {
-            "Soltero",
-            "Casado"});
-            this.cbEstadoCivil.Location = new System.Drawing.Point(508, 120);
-            this.cbEstadoCivil.Name = "cbEstadoCivil";
-            this.cbEstadoCivil.Size = new System.Drawing.Size(148, 33);
-            this.cbEstadoCivil.TabIndex = 13;
-            // 
-            // txtTelefono
-            // 
-            this.txtTelefono.Location = new System.Drawing.Point(150, 240);
-            this.txtTelefono.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.txtTelefono.Name = "txtTelefono";
-            this.txtTelefono.Size = new System.Drawing.Size(153, 32);
-            this.txtTelefono.TabIndex = 14;
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Microsoft YaHei UI", 14.25F, System.Drawing.FontStyle.Italic);
-            this.label9.Location = new System.Drawing.Point(36, 247);
-            this.label9.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(93, 25);
-            this.label9.TabIndex = 15;
-            this.label9.Text = "Telefono";
             // 
             // FrmActivos
             // 

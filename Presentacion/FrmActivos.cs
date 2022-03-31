@@ -102,8 +102,8 @@ namespace practicaDepreciacion
 
                 Empleado empleado = new Empleado()
                 {
-                    Nombre = txtNombreEmpleado.Text,
-                    Codigo = int.Parse(txtCodigoEmpleado.Text),
+                    Nombres = txtNombreEmpleado.Text,
+                    Cedula = txtCodigoEmpleado.Text,
                   
                     Telefono = txtTelefono.Text,
 

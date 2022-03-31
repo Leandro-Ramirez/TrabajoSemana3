@@ -8,9 +8,9 @@ namespace Domain.Enum
 {
     public enum Estado
     {
-        Soltero,
-        Casado,
+        Subsidio,
+        Activo,
+        Vacaciones
 
-      
     }
 }
