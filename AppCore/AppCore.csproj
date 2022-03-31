@@ -71,12 +71,15 @@
   <ItemGroup>
     <Compile Include="Factories\FactoryDeducciones.cs" />
     <Compile Include="IServices\IActivoServices.cs" />
+    <Compile Include="IServices\IEmpledoServices.cs" />
     <Compile Include="IServices\IServices.cs" />
     <Compile Include="Processes\LineaRecta.cs" />
     <Compile Include="Processes\SDa.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Services\ActivoServices.cs" />
     <Compile Include="Services\BaseServices.cs" />
+    <Compile Include="Services\EmpleadoServices.cs" />
+    <Compile Include="Services\IEmpleadoServices.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Domain\Domain.csproj">
