@@ -17,6 +17,10 @@ namespace Domain.Entities
         public double Valor { get; set; }
         public int VidaUtil { get; set; }
         public double ValorResidual { get; set; }
+        public EstadoActivo estadoActivo { get; set; }
+        public string Descripcion { get; set; }
+
+
         #endregion
     }
 }

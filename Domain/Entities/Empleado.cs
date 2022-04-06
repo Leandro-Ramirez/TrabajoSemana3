@@ -17,5 +17,9 @@ namespace Domain.Entities
         public string Telefono { get; set; }
         public string Email { get; set; }
         public Estado Estado { get; set; }
+        public List<Activo> ActivoEmpleado { get; set; }
+
+
+
     }
 }

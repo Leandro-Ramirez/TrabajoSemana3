@@ -5,6 +5,7 @@ using Domain.Entities;
 using AppCore.IServices;
 using System.Windows.Forms;
 using System.Collections.Generic;
+using Domain.Enum;
 #endregion
 
 namespace practicaDepreciacion
@@ -97,7 +98,12 @@ namespace practicaDepreciacion
                     Nombre = TxtNombre.Text,
                     Valor = double.Parse(TxtValor.Text),
                     ValorResidual = double.Parse(TxtValorR.Text),
-                    VidaUtil = int.Parse(TxtVidaU.Text)
+                    VidaUtil = int.Parse(TxtVidaU.Text),
+                    Descripcion = txtDescripcion.Text,
+                    estadoActivo = (EstadoActivo)Enum.GetValues(typeof(EstadoActivo))
+                                                            .GetValue(cbEstadoActivo.SelectedIndex)
+
+
                 };
 
                 Empleado empleado = new Empleado()
@@ -192,15 +198,13 @@ namespace practicaDepreciacion
         #region Verificar
         private bool Verificar()
         {
-            if (String.IsNullOrEmpty(TxtNombre.Text) || String.IsNullOrEmpty(TxtValor.Text) || String.IsNullOrEmpty(TxtVidaU.Text) || String.IsNullOrEmpty(TxtValorR.Text))
+            if (String.IsNullOrEmpty(TxtNombre.Text) || String.IsNullOrEmpty(TxtValor.Text) || String.IsNullOrEmpty(TxtVidaU.Text) || 
+                String.IsNullOrEmpty(TxtValorR.Text) || string.IsNullOrEmpty(cbEstadoActivo.Text) || string.IsNullOrEmpty(txtDescripcion.Text))
             {
                 return false;
             }
 
-            if (String.IsNullOrEmpty(txtNombreEmpleado.Text) || String.IsNullOrEmpty(txtCodigoEmpleado.Text) || String.IsNullOrEmpty(txtDescripcion.Text) || String.IsNullOrEmpty(cbEstadoCivil.Text) || String.IsNullOrEmpty(txtTelefono.Text))
-            {
-                return false;
-            }
+           
             
 
 

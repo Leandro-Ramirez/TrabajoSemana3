@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmActivos));
             this.label1 = new System.Windows.Forms.Label();
             this.BtnEliminar = new System.Windows.Forms.Button();
@@ -44,14 +44,16 @@
             this.TxtNombre = new System.Windows.Forms.TextBox();
             this.BtnGuardar = new System.Windows.Forms.Button();
             this.GbInformacion = new System.Windows.Forms.GroupBox();
+            this.cbEstadoActivo = new System.Windows.Forms.ComboBox();
+            this.label10 = new System.Windows.Forms.Label();
+            this.txtDescripcion = new System.Windows.Forms.TextBox();
+            this.label6 = new System.Windows.Forms.Label();
             this.txtTelefono = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
             this.cbEstadoCivil = new System.Windows.Forms.ComboBox();
             this.txtNombreEmpleado = new System.Windows.Forms.TextBox();
             this.txtCodigoEmpleado = new System.Windows.Forms.TextBox();
-            this.txtDescripcion = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.GbAcciones = new System.Windows.Forms.GroupBox();
@@ -68,12 +70,12 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Mongolian Baiti", 24F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Black;
-            this.label1.Location = new System.Drawing.Point(299, 6);
+            this.label1.Location = new System.Drawing.Point(501, 9);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(310, 37);
+            this.label1.Size = new System.Drawing.Size(287, 34);
             this.label1.TabIndex = 0;
             this.label1.Text = "Registro de Activos";
             // 
@@ -113,14 +115,14 @@
             // 
             this.DgvActivos.BackgroundColor = System.Drawing.SystemColors.ControlDarkDark;
             this.DgvActivos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.Desktop;
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.DgvActivos.DefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.Desktop;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.DgvActivos.DefaultCellStyle = dataGridViewCellStyle2;
             this.DgvActivos.GridColor = System.Drawing.Color.Maroon;
             this.DgvActivos.Location = new System.Drawing.Point(12, 397);
             this.DgvActivos.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
@@ -134,7 +136,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft YaHei UI", 14.25F, System.Drawing.FontStyle.Italic);
-            this.label4.Location = new System.Drawing.Point(36, 164);
+            this.label4.Location = new System.Drawing.Point(47, 192);
             this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(93, 25);
@@ -145,7 +147,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft YaHei UI", 14.25F, System.Drawing.FontStyle.Italic);
-            this.label3.Location = new System.Drawing.Point(-5, 124);
+            this.label3.Location = new System.Drawing.Point(6, 152);
             this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(143, 25);
@@ -156,7 +158,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft YaHei UI", 14.25F, System.Drawing.FontStyle.Italic);
-            this.label2.Location = new System.Drawing.Point(74, 67);
+            this.label2.Location = new System.Drawing.Point(85, 95);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(65, 25);
@@ -167,7 +169,7 @@
             // 
             this.Nombre.AutoSize = true;
             this.Nombre.Font = new System.Drawing.Font("Microsoft YaHei UI", 14.25F, System.Drawing.FontStyle.Italic);
-            this.Nombre.Location = new System.Drawing.Point(50, 23);
+            this.Nombre.Location = new System.Drawing.Point(61, 51);
             this.Nombre.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.Nombre.Name = "Nombre";
             this.Nombre.Size = new System.Drawing.Size(92, 25);
@@ -176,7 +178,7 @@
             // 
             // TxtVidaU
             // 
-            this.TxtVidaU.Location = new System.Drawing.Point(146, 161);
+            this.TxtVidaU.Location = new System.Drawing.Point(157, 189);
             this.TxtVidaU.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.TxtVidaU.Name = "TxtVidaU";
             this.TxtVidaU.Size = new System.Drawing.Size(153, 32);
@@ -185,7 +187,7 @@
             // 
             // TxtValorR
             // 
-            this.TxtValorR.Location = new System.Drawing.Point(146, 117);
+            this.TxtValorR.Location = new System.Drawing.Point(157, 145);
             this.TxtValorR.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.TxtValorR.Name = "TxtValorR";
             this.TxtValorR.Size = new System.Drawing.Size(153, 32);
@@ -194,7 +196,7 @@
             // 
             // TxtValor
             // 
-            this.TxtValor.Location = new System.Drawing.Point(147, 67);
+            this.TxtValor.Location = new System.Drawing.Point(158, 95);
             this.TxtValor.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.TxtValor.Name = "TxtValor";
             this.TxtValor.Size = new System.Drawing.Size(153, 32);
@@ -203,7 +205,7 @@
             // 
             // TxtNombre
             // 
-            this.TxtNombre.Location = new System.Drawing.Point(150, 20);
+            this.TxtNombre.Location = new System.Drawing.Point(161, 48);
             this.TxtNombre.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.TxtNombre.Name = "TxtNombre";
             this.TxtNombre.Size = new System.Drawing.Size(150, 32);
@@ -229,16 +231,10 @@
             // GbInformacion
             // 
             this.GbInformacion.BackColor = System.Drawing.Color.SandyBrown;
-            this.GbInformacion.Controls.Add(this.txtTelefono);
-            this.GbInformacion.Controls.Add(this.label9);
-            this.GbInformacion.Controls.Add(this.cbEstadoCivil);
-            this.GbInformacion.Controls.Add(this.txtNombreEmpleado);
-            this.GbInformacion.Controls.Add(this.txtCodigoEmpleado);
+            this.GbInformacion.Controls.Add(this.cbEstadoActivo);
+            this.GbInformacion.Controls.Add(this.label10);
             this.GbInformacion.Controls.Add(this.txtDescripcion);
-            this.GbInformacion.Controls.Add(this.label5);
             this.GbInformacion.Controls.Add(this.label6);
-            this.GbInformacion.Controls.Add(this.label7);
-            this.GbInformacion.Controls.Add(this.label8);
             this.GbInformacion.Controls.Add(this.TxtNombre);
             this.GbInformacion.Controls.Add(this.TxtValor);
             this.GbInformacion.Controls.Add(this.TxtValorR);
@@ -256,19 +252,63 @@
             this.GbInformacion.TabStop = false;
             this.GbInformacion.Text = "Informacion:";
             // 
+            // cbEstadoActivo
+            // 
+            this.cbEstadoActivo.FormattingEnabled = true;
+            this.cbEstadoActivo.Items.AddRange(new object[] {
+            "Mal Estado",
+            "Reparacion",
+            "Asignado",
+            "Disponible"});
+            this.cbEstadoActivo.Location = new System.Drawing.Point(157, 236);
+            this.cbEstadoActivo.Name = "cbEstadoActivo";
+            this.cbEstadoActivo.Size = new System.Drawing.Size(148, 33);
+            this.cbEstadoActivo.TabIndex = 15;
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("Microsoft YaHei UI", 14.25F, System.Drawing.FontStyle.Italic);
+            this.label10.Location = new System.Drawing.Point(12, 239);
+            this.label10.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(141, 25);
+            this.label10.TabIndex = 14;
+            this.label10.Text = "Estado Activo:";
+            // 
+            // txtDescripcion
+            // 
+            this.txtDescripcion.Location = new System.Drawing.Point(319, 48);
+            this.txtDescripcion.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.txtDescripcion.Multiline = true;
+            this.txtDescripcion.Name = "txtDescripcion";
+            this.txtDescripcion.Size = new System.Drawing.Size(333, 186);
+            this.txtDescripcion.TabIndex = 10;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Microsoft YaHei UI", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Italic | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Location = new System.Drawing.Point(314, 20);
+            this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(187, 25);
+            this.label6.TabIndex = 12;
+            this.label6.Text = "Descripcion Activo:";
+            // 
             // txtTelefono
             // 
-            this.txtTelefono.Location = new System.Drawing.Point(150, 240);
+            this.txtTelefono.Location = new System.Drawing.Point(1129, 534);
             this.txtTelefono.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.txtTelefono.Name = "txtTelefono";
-            this.txtTelefono.Size = new System.Drawing.Size(153, 32);
+            this.txtTelefono.Size = new System.Drawing.Size(153, 22);
             this.txtTelefono.TabIndex = 14;
             // 
             // label9
             // 
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Microsoft YaHei UI", 14.25F, System.Drawing.FontStyle.Italic);
-            this.label9.Location = new System.Drawing.Point(36, 247);
+            this.label9.Location = new System.Drawing.Point(1015, 534);
             this.label9.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(93, 25);
@@ -282,63 +322,43 @@
             "Subsidio",
             "Activo",
             "Vacaciones"});
-            this.cbEstadoCivil.Location = new System.Drawing.Point(508, 120);
+            this.cbEstadoCivil.Location = new System.Drawing.Point(1129, 497);
             this.cbEstadoCivil.Name = "cbEstadoCivil";
-            this.cbEstadoCivil.Size = new System.Drawing.Size(148, 33);
+            this.cbEstadoCivil.Size = new System.Drawing.Size(148, 24);
             this.cbEstadoCivil.TabIndex = 13;
             // 
             // txtNombreEmpleado
             // 
-            this.txtNombreEmpleado.Location = new System.Drawing.Point(503, 20);
+            this.txtNombreEmpleado.Location = new System.Drawing.Point(1124, 397);
             this.txtNombreEmpleado.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.txtNombreEmpleado.Name = "txtNombreEmpleado";
-            this.txtNombreEmpleado.Size = new System.Drawing.Size(153, 32);
+            this.txtNombreEmpleado.Size = new System.Drawing.Size(153, 22);
             this.txtNombreEmpleado.TabIndex = 5;
             // 
             // txtCodigoEmpleado
             // 
-            this.txtCodigoEmpleado.Location = new System.Drawing.Point(503, 64);
+            this.txtCodigoEmpleado.Location = new System.Drawing.Point(1124, 441);
             this.txtCodigoEmpleado.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.txtCodigoEmpleado.Name = "txtCodigoEmpleado";
-            this.txtCodigoEmpleado.Size = new System.Drawing.Size(153, 32);
+            this.txtCodigoEmpleado.Size = new System.Drawing.Size(153, 22);
             this.txtCodigoEmpleado.TabIndex = 6;
-            // 
-            // txtDescripcion
-            // 
-            this.txtDescripcion.Location = new System.Drawing.Point(503, 168);
-            this.txtDescripcion.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.txtDescripcion.Multiline = true;
-            this.txtDescripcion.Name = "txtDescripcion";
-            this.txtDescripcion.Size = new System.Drawing.Size(153, 148);
-            this.txtDescripcion.TabIndex = 10;
             // 
             // label5
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft YaHei UI", 14.25F, System.Drawing.FontStyle.Italic);
-            this.label5.Location = new System.Drawing.Point(318, 23);
+            this.label5.Location = new System.Drawing.Point(939, 400);
             this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(183, 25);
             this.label5.TabIndex = 7;
             this.label5.Text = "NombreEmpleado:";
             // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Microsoft YaHei UI", 14.25F, System.Drawing.FontStyle.Italic);
-            this.label6.Location = new System.Drawing.Point(314, 168);
-            this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(187, 25);
-            this.label6.TabIndex = 12;
-            this.label6.Text = "Descripcion Activo:";
-            // 
             // label7
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Microsoft YaHei UI", 14.25F, System.Drawing.FontStyle.Italic);
-            this.label7.Location = new System.Drawing.Point(321, 74);
+            this.label7.Location = new System.Drawing.Point(942, 451);
             this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(180, 25);
@@ -349,7 +369,7 @@
             // 
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Microsoft YaHei UI", 14.25F, System.Drawing.FontStyle.Italic);
-            this.label8.Location = new System.Drawing.Point(422, 120);
+            this.label8.Location = new System.Drawing.Point(1043, 497);
             this.label8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(78, 25);
@@ -438,11 +458,19 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.NavajoWhite;
             this.ClientSize = new System.Drawing.Size(1290, 662);
+            this.Controls.Add(this.txtTelefono);
+            this.Controls.Add(this.label9);
             this.Controls.Add(this.BtnSalir);
             this.Controls.Add(this.GbAcciones);
+            this.Controls.Add(this.cbEstadoCivil);
             this.Controls.Add(this.GbInformacion);
+            this.Controls.Add(this.txtNombreEmpleado);
+            this.Controls.Add(this.txtCodigoEmpleado);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.DgvActivos);
+            this.Controls.Add(this.label5);
+            this.Controls.Add(this.label8);
+            this.Controls.Add(this.label7);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ForeColor = System.Drawing.Color.White;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
@@ -492,6 +520,8 @@
         private System.Windows.Forms.ComboBox cbEstadoCivil;
         private System.Windows.Forms.TextBox txtTelefono;
         private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.ComboBox cbEstadoActivo;
+        private System.Windows.Forms.Label label10;
     }
 }
 
