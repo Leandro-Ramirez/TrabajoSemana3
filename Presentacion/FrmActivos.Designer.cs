@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmActivos));
             this.label1 = new System.Windows.Forms.Label();
             this.BtnEliminar = new System.Windows.Forms.Button();
@@ -59,7 +59,6 @@
             this.GbAcciones = new System.Windows.Forms.GroupBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.BtnLimpiar = new System.Windows.Forms.Button();
-            this.BtnMostrar = new System.Windows.Forms.Button();
             this.BtnSalir = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.DgvActivos)).BeginInit();
             this.GbInformacion.SuspendLayout();
@@ -115,14 +114,14 @@
             // 
             this.DgvActivos.BackgroundColor = System.Drawing.SystemColors.ControlDarkDark;
             this.DgvActivos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.Desktop;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.DgvActivos.DefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle4.BackColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.Desktop;
+            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.DgvActivos.DefaultCellStyle = dataGridViewCellStyle4;
             this.DgvActivos.GridColor = System.Drawing.Color.Maroon;
             this.DgvActivos.Location = new System.Drawing.Point(12, 397);
             this.DgvActivos.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
@@ -278,7 +277,7 @@
             // 
             // txtDescripcion
             // 
-            this.txtDescripcion.Location = new System.Drawing.Point(319, 48);
+            this.txtDescripcion.Location = new System.Drawing.Point(328, 78);
             this.txtDescripcion.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.txtDescripcion.Multiline = true;
             this.txtDescripcion.Name = "txtDescripcion";
@@ -289,7 +288,7 @@
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft YaHei UI", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Italic | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(314, 20);
+            this.label6.Location = new System.Drawing.Point(323, 50);
             this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(187, 25);
@@ -381,7 +380,6 @@
             this.GbAcciones.BackColor = System.Drawing.Color.SandyBrown;
             this.GbAcciones.Controls.Add(this.pictureBox1);
             this.GbAcciones.Controls.Add(this.BtnLimpiar);
-            this.GbAcciones.Controls.Add(this.BtnMostrar);
             this.GbAcciones.Controls.Add(this.BtnGuardar);
             this.GbAcciones.Controls.Add(this.BtnActualizar);
             this.GbAcciones.Controls.Add(this.BtnEliminar);
@@ -419,22 +417,6 @@
             this.BtnLimpiar.Text = "Limpiar";
             this.BtnLimpiar.UseVisualStyleBackColor = false;
             this.BtnLimpiar.Click += new System.EventHandler(this.BtnLimpiar_Click);
-            // 
-            // BtnMostrar
-            // 
-            this.BtnMostrar.BackColor = System.Drawing.Color.Yellow;
-            this.BtnMostrar.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.BtnMostrar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.BtnMostrar.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnMostrar.ForeColor = System.Drawing.SystemColors.Desktop;
-            this.BtnMostrar.Location = new System.Drawing.Point(132, 22);
-            this.BtnMostrar.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.BtnMostrar.Name = "BtnMostrar";
-            this.BtnMostrar.Size = new System.Drawing.Size(109, 50);
-            this.BtnMostrar.TabIndex = 1;
-            this.BtnMostrar.Text = "Mostrar";
-            this.BtnMostrar.UseVisualStyleBackColor = false;
-            this.BtnMostrar.Click += new System.EventHandler(this.BtnMostrar_Click);
             // 
             // BtnSalir
             // 
@@ -506,7 +488,6 @@
         private System.Windows.Forms.Button BtnGuardar;
         private System.Windows.Forms.GroupBox GbInformacion;
         private System.Windows.Forms.GroupBox GbAcciones;
-        private System.Windows.Forms.Button BtnMostrar;
         private System.Windows.Forms.Button BtnSalir;
         private System.Windows.Forms.Button BtnLimpiar;
         private System.Windows.Forms.PictureBox pictureBox1;

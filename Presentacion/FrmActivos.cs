@@ -106,32 +106,15 @@ namespace practicaDepreciacion
 
                 };
 
-                Empleado empleado = new Empleado()
-                {
-                    Nombres = txtNombreEmpleado.Text,
-                    Cedula = txtCodigoEmpleado.Text,
-                  
-                    Telefono = txtTelefono.Text,
-
-
-                };
-
-
-
-
-
                 activoServices.Add(activo);
-                Limpiar();
+                ActualizarLista();
+                Limpiar();           
             }
         }
         #endregion
 
-        #region Mostrar Click
-        private void BtnMostrar_Click(object sender, EventArgs e)
-        {
-            DgvActivos.DataSource = null;
-            DgvActivos.DataSource = activoServices.Read();
-        }
+       
+
         #endregion
 
         #region Actualizar Click
@@ -192,7 +175,7 @@ namespace practicaDepreciacion
         }
         #endregion
         #endregion
-        #endregion
+        
 
         #region Metodos
         #region Verificar
