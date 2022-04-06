@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmEmpleado));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.BtnSalir = new System.Windows.Forms.Button();
             this.GbAcciones = new System.Windows.Forms.GroupBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
@@ -76,7 +76,7 @@
             // 
             // GbAcciones
             // 
-            this.GbAcciones.BackColor = System.Drawing.Color.SandyBrown;
+            this.GbAcciones.BackColor = System.Drawing.Color.Cyan;
             this.GbAcciones.Controls.Add(this.pictureBox1);
             this.GbAcciones.Controls.Add(this.BtnLimpiar);
             this.GbAcciones.Controls.Add(this.BtnMostrar);
@@ -181,7 +181,7 @@
             // 
             // GbInformacion
             // 
-            this.GbInformacion.BackColor = System.Drawing.Color.SandyBrown;
+            this.GbInformacion.BackColor = System.Drawing.Color.Cyan;
             this.GbInformacion.Controls.Add(this.txtCedula);
             this.GbInformacion.Controls.Add(this.label3);
             this.GbInformacion.Controls.Add(this.txtEmail);
@@ -219,14 +219,14 @@
             // 
             this.DgvEmpleado.BackgroundColor = System.Drawing.SystemColors.ControlDarkDark;
             this.DgvEmpleado.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.Desktop;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.DgvEmpleado.DefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.Desktop;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.DgvEmpleado.DefaultCellStyle = dataGridViewCellStyle3;
             this.DgvEmpleado.GridColor = System.Drawing.Color.Maroon;
             this.DgvEmpleado.Location = new System.Drawing.Point(20, 403);
             this.DgvEmpleado.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
@@ -357,6 +357,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.ClientSize = new System.Drawing.Size(1307, 654);
             this.Controls.Add(this.BtnSalir);
             this.Controls.Add(this.GbAcciones);
