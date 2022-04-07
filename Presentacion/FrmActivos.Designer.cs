@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmActivos));
             this.label1 = new System.Windows.Forms.Label();
             this.BtnEliminar = new System.Windows.Forms.Button();
@@ -48,14 +48,6 @@
             this.label10 = new System.Windows.Forms.Label();
             this.txtDescripcion = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
-            this.txtTelefono = new System.Windows.Forms.TextBox();
-            this.label9 = new System.Windows.Forms.Label();
-            this.cbEstadoCivil = new System.Windows.Forms.ComboBox();
-            this.txtNombreEmpleado = new System.Windows.Forms.TextBox();
-            this.txtCodigoEmpleado = new System.Windows.Forms.TextBox();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
             this.GbAcciones = new System.Windows.Forms.GroupBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.BtnLimpiar = new System.Windows.Forms.Button();
@@ -114,14 +106,14 @@
             // 
             this.DgvActivos.BackgroundColor = System.Drawing.SystemColors.ControlDarkDark;
             this.DgvActivos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle4.BackColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.Desktop;
-            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.DgvActivos.DefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.Desktop;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.DgvActivos.DefaultCellStyle = dataGridViewCellStyle1;
             this.DgvActivos.GridColor = System.Drawing.Color.Maroon;
             this.DgvActivos.Location = new System.Drawing.Point(12, 397);
             this.DgvActivos.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
@@ -253,6 +245,7 @@
             // 
             // cbEstadoActivo
             // 
+            this.cbEstadoActivo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbEstadoActivo.FormattingEnabled = true;
             this.cbEstadoActivo.Items.AddRange(new object[] {
             "Mal Estado",
@@ -295,86 +288,6 @@
             this.label6.TabIndex = 12;
             this.label6.Text = "Descripcion Activo:";
             // 
-            // txtTelefono
-            // 
-            this.txtTelefono.Location = new System.Drawing.Point(1129, 534);
-            this.txtTelefono.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.txtTelefono.Name = "txtTelefono";
-            this.txtTelefono.Size = new System.Drawing.Size(153, 22);
-            this.txtTelefono.TabIndex = 14;
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Microsoft YaHei UI", 14.25F, System.Drawing.FontStyle.Italic);
-            this.label9.Location = new System.Drawing.Point(1015, 534);
-            this.label9.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(93, 25);
-            this.label9.TabIndex = 15;
-            this.label9.Text = "Telefono";
-            // 
-            // cbEstadoCivil
-            // 
-            this.cbEstadoCivil.FormattingEnabled = true;
-            this.cbEstadoCivil.Items.AddRange(new object[] {
-            "Subsidio",
-            "Activo",
-            "Vacaciones"});
-            this.cbEstadoCivil.Location = new System.Drawing.Point(1129, 497);
-            this.cbEstadoCivil.Name = "cbEstadoCivil";
-            this.cbEstadoCivil.Size = new System.Drawing.Size(148, 24);
-            this.cbEstadoCivil.TabIndex = 13;
-            // 
-            // txtNombreEmpleado
-            // 
-            this.txtNombreEmpleado.Location = new System.Drawing.Point(1124, 397);
-            this.txtNombreEmpleado.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.txtNombreEmpleado.Name = "txtNombreEmpleado";
-            this.txtNombreEmpleado.Size = new System.Drawing.Size(153, 22);
-            this.txtNombreEmpleado.TabIndex = 5;
-            // 
-            // txtCodigoEmpleado
-            // 
-            this.txtCodigoEmpleado.Location = new System.Drawing.Point(1124, 441);
-            this.txtCodigoEmpleado.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.txtCodigoEmpleado.Name = "txtCodigoEmpleado";
-            this.txtCodigoEmpleado.Size = new System.Drawing.Size(153, 22);
-            this.txtCodigoEmpleado.TabIndex = 6;
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Microsoft YaHei UI", 14.25F, System.Drawing.FontStyle.Italic);
-            this.label5.Location = new System.Drawing.Point(939, 400);
-            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(183, 25);
-            this.label5.TabIndex = 7;
-            this.label5.Text = "NombreEmpleado:";
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Microsoft YaHei UI", 14.25F, System.Drawing.FontStyle.Italic);
-            this.label7.Location = new System.Drawing.Point(942, 451);
-            this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(180, 25);
-            this.label7.TabIndex = 9;
-            this.label7.Text = "Codigo Empleado:";
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Microsoft YaHei UI", 14.25F, System.Drawing.FontStyle.Italic);
-            this.label8.Location = new System.Drawing.Point(1043, 497);
-            this.label8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(78, 25);
-            this.label8.TabIndex = 11;
-            this.label8.Text = "Estado:";
-            // 
             // GbAcciones
             // 
             this.GbAcciones.BackColor = System.Drawing.Color.SandyBrown;
@@ -387,7 +300,7 @@
             this.GbAcciones.ForeColor = System.Drawing.Color.Black;
             this.GbAcciones.Location = new System.Drawing.Point(720, 46);
             this.GbAcciones.Name = "GbAcciones";
-            this.GbAcciones.Size = new System.Drawing.Size(558, 322);
+            this.GbAcciones.Size = new System.Drawing.Size(435, 322);
             this.GbAcciones.TabIndex = 1;
             this.GbAcciones.TabStop = false;
             this.GbAcciones.Text = "Acciones:";
@@ -396,7 +309,7 @@
             // 
             this.pictureBox1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.BackgroundImage")));
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox1.Location = new System.Drawing.Point(374, 13);
+            this.pictureBox1.Location = new System.Drawing.Point(250, 23);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(162, 176);
             this.pictureBox1.TabIndex = 6;
@@ -409,7 +322,7 @@
             this.BtnLimpiar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.BtnLimpiar.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnLimpiar.ForeColor = System.Drawing.SystemColors.Control;
-            this.BtnLimpiar.Location = new System.Drawing.Point(17, 146);
+            this.BtnLimpiar.Location = new System.Drawing.Point(134, 23);
             this.BtnLimpiar.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.BtnLimpiar.Name = "BtnLimpiar";
             this.BtnLimpiar.Size = new System.Drawing.Size(109, 50);
@@ -425,7 +338,7 @@
             this.BtnSalir.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.BtnSalir.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnSalir.ForeColor = System.Drawing.SystemColors.Desktop;
-            this.BtnSalir.Location = new System.Drawing.Point(795, 454);
+            this.BtnSalir.Location = new System.Drawing.Point(1053, 620);
             this.BtnSalir.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.BtnSalir.Name = "BtnSalir";
             this.BtnSalir.Size = new System.Drawing.Size(100, 30);
@@ -439,23 +352,15 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.NavajoWhite;
-            this.ClientSize = new System.Drawing.Size(1290, 662);
-            this.Controls.Add(this.txtTelefono);
-            this.Controls.Add(this.label9);
+            this.ClientSize = new System.Drawing.Size(1166, 662);
             this.Controls.Add(this.BtnSalir);
             this.Controls.Add(this.GbAcciones);
-            this.Controls.Add(this.cbEstadoCivil);
             this.Controls.Add(this.GbInformacion);
-            this.Controls.Add(this.txtNombreEmpleado);
-            this.Controls.Add(this.txtCodigoEmpleado);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.DgvActivos);
-            this.Controls.Add(this.label5);
-            this.Controls.Add(this.label8);
-            this.Controls.Add(this.label7);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ForeColor = System.Drawing.Color.White;
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.Name = "FrmActivos";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -491,16 +396,8 @@
         private System.Windows.Forms.Button BtnSalir;
         private System.Windows.Forms.Button BtnLimpiar;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.TextBox txtNombreEmpleado;
-        private System.Windows.Forms.TextBox txtCodigoEmpleado;
         private System.Windows.Forms.TextBox txtDescripcion;
-        private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.ComboBox cbEstadoCivil;
-        private System.Windows.Forms.TextBox txtTelefono;
-        private System.Windows.Forms.Label label9;
         private System.Windows.Forms.ComboBox cbEstadoActivo;
         private System.Windows.Forms.Label label10;
     }

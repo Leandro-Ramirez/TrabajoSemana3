@@ -8,7 +8,7 @@ using Domain.Interfaces;
 
 namespace AppCore.Services
 {
-    class EmpleadoServices : BaseServices<Empleado>, IEmpleadoServices
+    public class EmpleadoServices : BaseServices<Empleado>, IEmpleadoServices
     {
 
         IEmpleadoModel EmpleadoModel;

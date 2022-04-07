@@ -12,18 +12,18 @@ namespace Infraestructure.Repository
 {
     public class BinaryActivoRepository : IActivoModel
     {
-        #region Variables Globales
+        
         private RAFContext context;
         private const int SIZE = 119;
-        #endregion
+        
 
         public BinaryActivoRepository()
         {
             context = new RAFContext("activo", SIZE);
         }
 
-        #region Metodos
-        #region Añadir
+        
+        
         public void Add(Activo t)
         {
             try
@@ -35,9 +35,9 @@ namespace Infraestructure.Repository
                 throw;
             }
         }
-        #endregion
+        
 
-        #region Eliminar
+        
         public void Delete(int id, List<int> listaIds)
         {
             try
@@ -49,9 +49,9 @@ namespace Infraestructure.Repository
                 throw;
             }
         }
-        #endregion
+       
 
-        #region ObtenerElID
+        
         public Activo GetById(int id)
         {
             try
@@ -63,9 +63,9 @@ namespace Infraestructure.Repository
                 throw;
             }
         }
-        #endregion
+        
 
-        #region Leer
+       
         public List<Activo> Read()
         {
             try
@@ -77,9 +77,9 @@ namespace Infraestructure.Repository
                 throw;
             }
         }
-        #endregion
+      
 
-        #region Actualizar
+        
         public void Update(Activo t, int id)
         {
             try
@@ -91,14 +91,14 @@ namespace Infraestructure.Repository
                 throw;
             }
         }
-        #endregion
+       
 
-        #region Eliminar
+        
         public void Delete(int id)
         {
             throw new NotImplementedException();
         }
-        #endregion
-        #endregion
+        
+       
     }
 }

@@ -21,7 +21,7 @@ namespace practicaDepreciacion
         /// </summary>
         [STAThread]
 
-        #region Accion
+        
         static void Main()
         {
             Application.EnableVisualStyles();
@@ -32,10 +32,17 @@ namespace practicaDepreciacion
             builder.RegisterType<BinaryActivoRepository>().As<IActivoModel>();
             builder.RegisterType<ActivoServices>().As<IActivoServices>();
 
+
+            builder.RegisterType<BinaryEmpleadoRepository>().As<IEmpleadoModel>();
+            builder.RegisterType<EmpleadoServices>().As<IEmpledoServices>();
+            
+
             var container = builder.Build();
 
-            Application.Run(new FrmActivos(container.Resolve<IActivoServices>()));
+            //Application.Run(new FrmActivos(container.Resolve<IActivoServices>()));
+
+            Application.Run(new FrmEmpleado(container.Resolve<IEmpledoServices>()));
         }
-        #endregion
+       
     }
 }

@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace AppCore.IServices
 {
-    interface IEmpledoServices : IServices<Empleado>
+    public interface IEmpledoServices : IServices<Empleado>
     {
 
         Empleado GeyById(int id);

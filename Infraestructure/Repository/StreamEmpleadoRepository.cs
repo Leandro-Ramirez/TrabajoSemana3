@@ -1,39 +1,31 @@
-﻿#region Usos
+﻿using Domain.Entities;
+using Domain.Interfaces;
 using System;
+using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Text;
-using Domain.Entities;
-using Domain.Interfaces;
 using System.Threading.Tasks;
-using System.Collections.Generic;
-#endregion
 
 namespace Infraestructure.Repository
 {
-    public class StreamActivoRepository : IActivoModel
+    public class StreamEmpleadoRepository : IEmpleadoModel
     {
-        #region Variables Globales
+
+
         private BinaryReader binaryReader;
         private BinaryWriter binaryWriter;
-        private string fileName = "activo.dat";
-        #endregion
-
-        public StreamActivoRepository()
+        private string fileName = "Empleado.dat";
+        public StreamEmpleadoRepository()
         {
-
         }
 
-        #region Metodos
-
-
-        #region Añadir
-        public void Add(Activo t)
+        public void Add(Empleado t)
         {
             try
             {
                 int id = 0;
-                Activo last = Read().LastOrDefault();
+                Empleado last = Read().LastOrDefault();
 
                 if (last == null)
                 {
@@ -47,10 +39,10 @@ namespace Infraestructure.Repository
                 {
                     binaryWriter = new BinaryWriter(fileStream);
                     binaryWriter.Write(id);
-                    binaryWriter.Write(t.Nombre);
-                    binaryWriter.Write(t.Valor);
-                    binaryWriter.Write(t.VidaUtil);
-                    binaryWriter.Write(t.ValorResidual);
+                    binaryWriter.Write(t.Nombres);
+                    binaryWriter.Write(t.Email);
+                    
+                    binaryWriter.Write(t.Telefono);
                 }
             }
             catch (IOException)
@@ -58,23 +50,20 @@ namespace Infraestructure.Repository
                 throw;
             }
         }
-        #endregion
 
-        #region Eliminar
         public void Delete(int id)
         {
             throw new NotImplementedException();
         }
+
         public void Delete(int id, List<int> listaIds)
         {
             throw new NotImplementedException();
         }
-        #endregion
 
-        #region ObtenerElId
-        public Activo GetById(int id)
+        public Empleado GetById(int id)
         {
-            Activo activo = null;
+            Empleado empledo = null;
             bool success = false;
 
             try
@@ -86,39 +75,52 @@ namespace Infraestructure.Repository
 
                     if (length == 0)
                     {
-                        return activo;
+                        return empledo;
                     }
                     binaryReader.BaseStream.Seek(0, SeekOrigin.Begin);
                     while (binaryReader.BaseStream.Position < length)
                     {
-                        activo = new Activo()
+                        empledo = new Empleado()
                         {
                             Id = binaryReader.ReadInt32(),
-                            Nombre = binaryReader.ReadString(),
-                            Valor = binaryReader.ReadDouble(),
-                            VidaUtil = binaryReader.ReadInt32(),
-                            ValorResidual = binaryReader.ReadDouble()
+                            Nombres = binaryReader.ReadString(),
+
+                            Cedula = binaryReader.ReadString(),
+                            Email = binaryReader.ReadString(),
+
+                            Telefono = binaryReader.ReadInt32(),
+                            CodigoEmpleado = binaryReader.ReadInt32(),
+                            
+                           
+
+
                         };
-                        if (activo.Id == id)
+
+
+
+                        if (empledo.Id == id)
                         {
                             success = true;
                             break;
                         }
                     }
                 }
-                return success ? activo : null;
+                return success ? empledo : null;
             }
             catch (IOException)
             {
                 throw;
             }
-        }
-        #endregion
 
-        #region Leer
-        public List<Activo> Read()
+
+
+
+
+        }
+
+        public List<Empleado> Read()
         {
-            List<Activo> activos = new List<Activo>();
+            List<Empleado> empleado = new List<Empleado>();
             try
             {
                 using (FileStream fileStream = new FileStream(fileName, FileMode.OpenOrCreate, FileAccess.Read))
@@ -128,40 +130,36 @@ namespace Infraestructure.Repository
 
                     if (length == 0)
                     {
-                        return activos;
+                        return empleado;
                     }
                     binaryReader.BaseStream.Seek(0, SeekOrigin.Begin);
                     while (binaryReader.BaseStream.Position < length)
                     {
-                        activos.Add(new Activo()
+                        empleado.Add(new Empleado()
                         {
                             Id = binaryReader.ReadInt32(),
-                            Nombre = binaryReader.ReadString(),
-                            Valor = binaryReader.ReadDouble(),
-                            VidaUtil = binaryReader.ReadInt32(),
-                            ValorResidual = binaryReader.ReadDouble()
+                            Nombres = binaryReader.ReadString(),
+
+                            Cedula = binaryReader.ReadString(),
+                            Email = binaryReader.ReadString(),
+
+                            Telefono = binaryReader.ReadInt32(),
+                            CodigoEmpleado = binaryReader.ReadInt32(),
+
                         });
                     }
                 }
-                return activos;
+                return empleado;
             }
             catch (IOException)
             {
                 throw;
             }
         }
-        #endregion
 
-        #region Actualizar
-        public void Update(Activo t, int id)
+        public void Update(Empleado t, int id)
         {
             throw new NotImplementedException();
         }
-        public void Update(int id)
-        {
-            throw new NotImplementedException();
-        }
-        #endregion
-        #endregion
     }
 }

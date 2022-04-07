@@ -29,18 +29,19 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmEmpleado));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
             this.BtnSalir = new System.Windows.Forms.Button();
             this.GbAcciones = new System.Windows.Forms.GroupBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.BtnLimpiar = new System.Windows.Forms.Button();
-            this.BtnMostrar = new System.Windows.Forms.Button();
             this.BtnGuardar = new System.Windows.Forms.Button();
             this.BtnActualizar = new System.Windows.Forms.Button();
             this.BtnEliminar = new System.Windows.Forms.Button();
             this.GbInformacion = new System.Windows.Forms.GroupBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.DgvEmpleado = new System.Windows.Forms.DataGridView();
+            this.txtCedula = new System.Windows.Forms.TextBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.txtEmail = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
             this.txtTelefono = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
             this.cbEstadoEmpleado = new System.Windows.Forms.ComboBox();
@@ -49,10 +50,8 @@
             this.label5 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
-            this.txtEmail = new System.Windows.Forms.TextBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.txtCedula = new System.Windows.Forms.TextBox();
-            this.label3 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.DgvEmpleado = new System.Windows.Forms.DataGridView();
             this.GbAcciones.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.GbInformacion.SuspendLayout();
@@ -66,28 +65,28 @@
             this.BtnSalir.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.BtnSalir.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnSalir.ForeColor = System.Drawing.SystemColors.Desktop;
-            this.BtnSalir.Location = new System.Drawing.Point(803, 460);
+            this.BtnSalir.Location = new System.Drawing.Point(1074, 584);
             this.BtnSalir.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.BtnSalir.Name = "BtnSalir";
             this.BtnSalir.Size = new System.Drawing.Size(100, 30);
             this.BtnSalir.TabIndex = 10;
             this.BtnSalir.Text = "Salir";
             this.BtnSalir.UseVisualStyleBackColor = false;
+            this.BtnSalir.Click += new System.EventHandler(this.BtnSalir_Click);
             // 
             // GbAcciones
             // 
             this.GbAcciones.BackColor = System.Drawing.Color.Cyan;
             this.GbAcciones.Controls.Add(this.pictureBox1);
             this.GbAcciones.Controls.Add(this.BtnLimpiar);
-            this.GbAcciones.Controls.Add(this.BtnMostrar);
             this.GbAcciones.Controls.Add(this.BtnGuardar);
             this.GbAcciones.Controls.Add(this.BtnActualizar);
             this.GbAcciones.Controls.Add(this.BtnEliminar);
             this.GbAcciones.Font = new System.Drawing.Font("Microsoft YaHei UI", 14.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.GbAcciones.ForeColor = System.Drawing.Color.Black;
-            this.GbAcciones.Location = new System.Drawing.Point(728, 52);
+            this.GbAcciones.Location = new System.Drawing.Point(720, 46);
             this.GbAcciones.Name = "GbAcciones";
-            this.GbAcciones.Size = new System.Drawing.Size(558, 322);
+            this.GbAcciones.Size = new System.Drawing.Size(449, 322);
             this.GbAcciones.TabIndex = 9;
             this.GbAcciones.TabStop = false;
             this.GbAcciones.Text = "Acciones:";
@@ -96,7 +95,7 @@
             // 
             this.pictureBox1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.BackgroundImage")));
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox1.Location = new System.Drawing.Point(331, 48);
+            this.pictureBox1.Location = new System.Drawing.Point(268, 20);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(162, 176);
             this.pictureBox1.TabIndex = 6;
@@ -109,7 +108,7 @@
             this.BtnLimpiar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.BtnLimpiar.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnLimpiar.ForeColor = System.Drawing.SystemColors.Control;
-            this.BtnLimpiar.Location = new System.Drawing.Point(17, 146);
+            this.BtnLimpiar.Location = new System.Drawing.Point(134, 23);
             this.BtnLimpiar.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.BtnLimpiar.Name = "BtnLimpiar";
             this.BtnLimpiar.Size = new System.Drawing.Size(109, 50);
@@ -117,22 +116,6 @@
             this.BtnLimpiar.Text = "Limpiar";
             this.BtnLimpiar.UseVisualStyleBackColor = false;
             this.BtnLimpiar.Click += new System.EventHandler(this.BtnLimpiar_Click);
-            // 
-            // BtnMostrar
-            // 
-            this.BtnMostrar.BackColor = System.Drawing.Color.Yellow;
-            this.BtnMostrar.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.BtnMostrar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.BtnMostrar.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnMostrar.ForeColor = System.Drawing.SystemColors.Desktop;
-            this.BtnMostrar.Location = new System.Drawing.Point(132, 22);
-            this.BtnMostrar.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.BtnMostrar.Name = "BtnMostrar";
-            this.BtnMostrar.Size = new System.Drawing.Size(109, 50);
-            this.BtnMostrar.TabIndex = 1;
-            this.BtnMostrar.Text = "Mostrar";
-            this.BtnMostrar.UseVisualStyleBackColor = false;
-            this.BtnMostrar.Click += new System.EventHandler(this.BtnMostrar_Click);
             // 
             // BtnGuardar
             // 
@@ -148,6 +131,7 @@
             this.BtnGuardar.TabIndex = 0;
             this.BtnGuardar.Text = "Guardar";
             this.BtnGuardar.UseVisualStyleBackColor = false;
+            this.BtnGuardar.Click += new System.EventHandler(this.BtnGuardar_Click);
             // 
             // BtnActualizar
             // 
@@ -178,6 +162,7 @@
             this.BtnEliminar.TabIndex = 3;
             this.BtnEliminar.Text = "Eliminar";
             this.BtnEliminar.UseVisualStyleBackColor = false;
+            this.BtnEliminar.Click += new System.EventHandler(this.BtnEliminar_Click);
             // 
             // GbInformacion
             // 
@@ -196,44 +181,50 @@
             this.GbInformacion.Controls.Add(this.label7);
             this.GbInformacion.Font = new System.Drawing.Font("Microsoft YaHei UI", 14.25F, System.Drawing.FontStyle.Italic);
             this.GbInformacion.ForeColor = System.Drawing.Color.Black;
-            this.GbInformacion.Location = new System.Drawing.Point(20, 52);
+            this.GbInformacion.Location = new System.Drawing.Point(12, 46);
             this.GbInformacion.Name = "GbInformacion";
             this.GbInformacion.Size = new System.Drawing.Size(689, 322);
             this.GbInformacion.TabIndex = 6;
             this.GbInformacion.TabStop = false;
             this.GbInformacion.Text = "Registro Empleado";
             // 
-            // label1
+            // txtCedula
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Mongolian Baiti", 24F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.Black;
-            this.label1.Location = new System.Drawing.Point(500, 9);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(319, 34);
-            this.label1.TabIndex = 7;
-            this.label1.Text = "Registro de Empleado";
+            this.txtCedula.Location = new System.Drawing.Point(509, 41);
+            this.txtCedula.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.txtCedula.Name = "txtCedula";
+            this.txtCedula.Size = new System.Drawing.Size(153, 32);
+            this.txtCedula.TabIndex = 26;
             // 
-            // DgvEmpleado
+            // label3
             // 
-            this.DgvEmpleado.BackgroundColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.DgvEmpleado.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.Desktop;
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.DgvEmpleado.DefaultCellStyle = dataGridViewCellStyle3;
-            this.DgvEmpleado.GridColor = System.Drawing.Color.Maroon;
-            this.DgvEmpleado.Location = new System.Drawing.Point(20, 403);
-            this.DgvEmpleado.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.DgvEmpleado.Name = "DgvEmpleado";
-            this.DgvEmpleado.RowHeadersWidth = 62;
-            this.DgvEmpleado.Size = new System.Drawing.Size(765, 236);
-            this.DgvEmpleado.TabIndex = 8;
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft YaHei UI", 14.25F, System.Drawing.FontStyle.Italic);
+            this.label3.Location = new System.Drawing.Point(420, 44);
+            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(81, 25);
+            this.label3.TabIndex = 27;
+            this.label3.Text = "Cedula:";
+            // 
+            // txtEmail
+            // 
+            this.txtEmail.Location = new System.Drawing.Point(217, 242);
+            this.txtEmail.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.txtEmail.Name = "txtEmail";
+            this.txtEmail.Size = new System.Drawing.Size(153, 32);
+            this.txtEmail.TabIndex = 24;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft YaHei UI", 14.25F, System.Drawing.FontStyle.Italic);
+            this.label2.Location = new System.Drawing.Point(103, 242);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(66, 25);
+            this.label2.TabIndex = 25;
+            this.label2.Text = "Email:";
             // 
             // txtTelefono
             // 
@@ -242,6 +233,7 @@
             this.txtTelefono.Name = "txtTelefono";
             this.txtTelefono.Size = new System.Drawing.Size(153, 32);
             this.txtTelefono.TabIndex = 22;
+            this.txtTelefono.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TxtTelefono_KeyPress);
             // 
             // label9
             // 
@@ -256,6 +248,7 @@
             // 
             // cbEstadoEmpleado
             // 
+            this.cbEstadoEmpleado.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbEstadoEmpleado.FormattingEnabled = true;
             this.cbEstadoEmpleado.Items.AddRange(new object[] {
             "Subsidio",
@@ -273,6 +266,8 @@
             this.txtNombreEmpleado.Name = "txtNombreEmpleado";
             this.txtNombreEmpleado.Size = new System.Drawing.Size(153, 32);
             this.txtNombreEmpleado.TabIndex = 16;
+            this.txtNombreEmpleado.MouseClick += new System.Windows.Forms.MouseEventHandler(this.TxtNombreEmpleado_MouseClick);
+            this.txtNombreEmpleado.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TxtNombreEmpleado_KeyPress);
             // 
             // txtCodigoEmpleado
             // 
@@ -281,6 +276,7 @@
             this.txtCodigoEmpleado.Name = "txtCodigoEmpleado";
             this.txtCodigoEmpleado.Size = new System.Drawing.Size(153, 32);
             this.txtCodigoEmpleado.TabIndex = 17;
+            this.txtCodigoEmpleado.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TxtCodigoEmpleado_KeyPress);
             // 
             // label5
             // 
@@ -315,57 +311,54 @@
             this.label7.TabIndex = 19;
             this.label7.Text = "Codigo Empleado:";
             // 
-            // txtEmail
+            // label1
             // 
-            this.txtEmail.Location = new System.Drawing.Point(217, 242);
-            this.txtEmail.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.txtEmail.Name = "txtEmail";
-            this.txtEmail.Size = new System.Drawing.Size(153, 32);
-            this.txtEmail.TabIndex = 24;
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Mongolian Baiti", 24F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.Black;
+            this.label1.Location = new System.Drawing.Point(500, 9);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(319, 34);
+            this.label1.TabIndex = 7;
+            this.label1.Text = "Registro de Empleado";
             // 
-            // label2
+            // DgvEmpleado
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft YaHei UI", 14.25F, System.Drawing.FontStyle.Italic);
-            this.label2.Location = new System.Drawing.Point(103, 242);
-            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(66, 25);
-            this.label2.TabIndex = 25;
-            this.label2.Text = "Email:";
-            // 
-            // txtCedula
-            // 
-            this.txtCedula.Location = new System.Drawing.Point(509, 41);
-            this.txtCedula.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.txtCedula.Name = "txtCedula";
-            this.txtCedula.Size = new System.Drawing.Size(153, 32);
-            this.txtCedula.TabIndex = 26;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft YaHei UI", 14.25F, System.Drawing.FontStyle.Italic);
-            this.label3.Location = new System.Drawing.Point(420, 44);
-            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(81, 25);
-            this.label3.TabIndex = 27;
-            this.label3.Text = "Cedula:";
+            this.DgvEmpleado.BackgroundColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.DgvEmpleado.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle5.BackColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.Desktop;
+            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.DgvEmpleado.DefaultCellStyle = dataGridViewCellStyle5;
+            this.DgvEmpleado.GridColor = System.Drawing.Color.Maroon;
+            this.DgvEmpleado.Location = new System.Drawing.Point(13, 374);
+            this.DgvEmpleado.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.DgvEmpleado.Name = "DgvEmpleado";
+            this.DgvEmpleado.RowHeadersWidth = 62;
+            this.DgvEmpleado.Size = new System.Drawing.Size(765, 236);
+            this.DgvEmpleado.TabIndex = 8;
+            this.DgvEmpleado.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DgvEmpleado_CellContentClick);
             // 
             // FrmEmpleado
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.ClientSize = new System.Drawing.Size(1307, 654);
+            this.BackColor = System.Drawing.SystemColors.Control;
+            this.ClientSize = new System.Drawing.Size(1187, 626);
             this.Controls.Add(this.BtnSalir);
             this.Controls.Add(this.GbAcciones);
             this.Controls.Add(this.GbInformacion);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.DgvEmpleado);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FrmEmpleado";
             this.Text = "Registro de Empleados";
+            this.Load += new System.EventHandler(this.FrmEmpleado_Load);
             this.GbAcciones.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.GbInformacion.ResumeLayout(false);
@@ -382,7 +375,6 @@
         private System.Windows.Forms.GroupBox GbAcciones;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Button BtnLimpiar;
-        private System.Windows.Forms.Button BtnMostrar;
         private System.Windows.Forms.Button BtnGuardar;
         private System.Windows.Forms.Button BtnActualizar;
         private System.Windows.Forms.Button BtnEliminar;

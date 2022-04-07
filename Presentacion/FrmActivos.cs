@@ -202,6 +202,9 @@ namespace practicaDepreciacion
             this.TxtValor.Text = String.Empty;
             this.TxtValorR.Text = String.Empty;
             this.TxtVidaU.Text = String.Empty;
+            this.txtDescripcion.Text = String.Empty;
+            cbEstadoActivo.SelectedIndex = -1;
+
         }
         #endregion
         #endregion
